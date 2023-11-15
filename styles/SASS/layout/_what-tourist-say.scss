@@ -1,0 +1,26 @@
+.what-tourist-say{
+    height: 680px;
+    background-image: url(../../../img/bg/what-tourist-say-bg.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+@media screen and (min-width: $tablet){
+    .what-tourist-say{
+        height: 924px;
+        
+    }
+}
+@media screen and (min-width: $Desktop){
+    .what-tourist-say{
+        height: 736px;
+        
+    }
+}
+@media screen and (min-width: $Desktop2){
+    .what-tourist-say{
+        height: 708px;
+        
+    }
+
+}

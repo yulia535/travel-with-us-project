@@ -1,0 +1,133 @@
+header{
+    height: 862px;
+    padding-top: 295px;
+    background-image: url(../../../img/bg/HeaderBackground.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    h1{
+        color: $colorText;
+        font-family: $fontPrimary;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 52px;
+        text-transform: uppercase;
+        margin-top: 0; 
+        margin-bottom: 8px;
+    }
+    .subheading{
+        color: $colorText;
+        font-family: $fontPrimary;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 6.82px;
+        margin-top: 0; 
+        margin-bottom: 48px;
+    }
+    .SearchForm{
+        box-sizing: border-box;
+        width: 540px;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 211px;
+        background-color: $colorText;
+        padding-left: 36px;
+        padding-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        input{
+            width: 277px;
+            border: none;
+            display: inline-block;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: $colorPlaceholder;
+                font-family: $fontPrimary;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+                letter-spacing: 2.8px;
+            }
+            
+        }
+        button{
+            cursor: pointer;
+            width: 139px;
+            height: 52px;
+            padding-left: 52px;
+            border: none;
+            background: $colorAccentPrimary;
+            color: $colorText;
+            font-family: $fontSecondary;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 1.4px;
+            text-align: left;
+            text-transform: uppercase;
+            position: relative;
+
+                &:hover{
+                    transform: scale(1.02) ;
+                }
+            
+            svg{
+                fill: $colorText;
+                position: absolute;
+                left: 24px;
+                top: 50%;
+                transform: translateY(-50%) ;
+
+            }
+        }
+      
+        
+    }
+    a{
+        color: $colorText;
+        text-decoration: none;
+        font-family: $fontPrimary;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2.8px;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            font-size: 16px;
+            
+            
+        }
+        svg{
+            fill: $colorText;
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+}
+@media screen and (min-width: $tablet){
+    .SearchForm{
+        width: 647px;
+        
+    }
+ 
+}
+@media screen and (min-width: $Desktop){
+
+}
+@media screen and (min-width: $Desktop2){
+
+}

@@ -1,0 +1,94 @@
+.steps{
+    box-sizing: border-box;
+    background-color: $colorBgSteps;
+    padding-top: 60px;
+    padding-bottom: 61px;
+    .card-box{
+        text-align: center;
+        .accent{
+            fill: $colorAccentPrimary;
+        }
+        .select{
+            fill: $colorIconSelect;
+        }
+        .thumbs{
+            fill: $colorIconThumbs;
+        }
+        p{
+            text-align: center;
+            font-family: $fontSecondary;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px; /* 111.111% */
+            text-transform: capitalize; 
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media screen and (min-width: $tablet){
+
+}
+@media screen and (max-width: calc($Desktop - 1px)){
+    .steps{ 
+        .card-box:not(:last-child){
+                margin-bottom: 60px;
+        }
+    }   
+}
+@media screen and (min-width: $Desktop){
+
+   .steps{
+    padding-top: 122px;
+    padding-bottom: 45px;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            &::before{
+                content: ' ';
+                display: block;
+                width: 632px;
+                height: 40px;
+                background-image: url(../../../img/vector1.svg);
+                background-position: cover;
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            .card-box{
+                width: 292px;
+            }
+
+        
+        }
+    }
+   
+}
+@media screen and (min-width: $Desktop2){
+    .steps{
+            .container{
+                &::before{
+                    width: 752px;
+                    height: 49px;
+                    background-image: url(../../../img/vector2.svg);
+                    background-position: cover;
+                    position: absolute;
+                    top: -49px;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+                .card-box{
+                    width: 364px;
+                }
+    
+            
+            }
+        }
+    
+
+}

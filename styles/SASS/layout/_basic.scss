@@ -1,0 +1,61 @@
+body{
+    color: $colorText;
+}
+.container{
+    width: 540px;
+    margin: auto;
+}
+.logo{
+    color: $colorText;
+    font-family: $fontPrimary;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    display: block;
+    width: 213px;
+    height: 60px;
+    border: none;
+    background-color: $colorAccentPrimary;
+    background-image: url(../../../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    color: $colorText;
+    text-align: center;
+    font-family: $fontSecondary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width: $tablet){
+    .container{
+        width: 720px;
+    }
+}
+@media screen and (min-width: $Desktop){
+    .container{
+        width: 960px;
+    }
+}
+@media screen and (min-width: $Desktop2){
+    .container{
+        width: 1140px;
+    }
+
+}

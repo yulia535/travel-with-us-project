@@ -1,0 +1,502 @@
+body {
+  color: #fff;
+}
+
+.container {
+  width: 540px;
+  margin: auto;
+}
+
+.logo {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  width: 213px;
+  height: 60px;
+  border: none;
+  background-color: #5373FD;
+  background-image: url(../../../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #fff;
+  text-align: center;
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    width: 1140px;
+  }
+}
+header {
+  height: 862px;
+  padding-top: 295px;
+  background-image: url(../../../img/bg/HeaderBackground.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+header h1 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+header .subheading {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 6.82px;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+header .SearchForm {
+  box-sizing: border-box;
+  width: 540px;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 211px;
+  background-color: #fff;
+  padding-left: 36px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+header .SearchForm input {
+  width: 277px;
+  border: none;
+  display: inline-block;
+}
+header .SearchForm input:focus {
+  outline: none;
+}
+header .SearchForm input::-moz-placeholder {
+  color: #999;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 2.8px;
+}
+header .SearchForm input::placeholder {
+  color: #999;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 2.8px;
+}
+header .SearchForm button {
+  cursor: pointer;
+  width: 139px;
+  height: 52px;
+  padding-left: 52px;
+  border: none;
+  background: #5373FD;
+  color: #fff;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+}
+header .SearchForm button:hover {
+  transform: scale(1.02);
+}
+header .SearchForm button svg {
+  fill: #fff;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  position: relative;
+  cursor: pointer;
+}
+header a:hover {
+  font-size: 16px;
+}
+header a svg {
+  fill: #fff;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .SearchForm {
+    width: 647px;
+  }
+}
+.navigation {
+  background-color: #5373FD;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.navigation .logo {
+  height: 20px;
+}
+.navigation button {
+  display: block;
+  width: 40px;
+  height: 24px;
+  background-image: url(../../../img/mobile/Burger.png);
+  background-size: cover;
+  border: none;
+  position: absolute;
+  right: 18px;
+  top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-bottom: 32px;
+  }
+  .navigation button {
+    display: none;
+  }
+  .navigation nav ul {
+    width: 575px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation nav ul li {
+    list-style: none;
+  }
+  .navigation nav ul li a {
+    color: #fff;
+    font-family: Aleo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navigation .logo {
+    margin-bottom: 0;
+  }
+  .navigation .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.why {
+  box-sizing: border-box;
+  height: 630px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../../../img/bg/WhyBackground.png);
+  background-position: center;
+  background-size: cover;
+}
+.why .img-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+.why .img-box img {
+  width: 258px;
+}
+.why .desc-box h2 {
+  text-align: center;
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 111.111% */
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+.why .desc-box p {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+  letter-spacing: 1.6px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.why .desc-box .button {
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .why {
+    height: 659px;
+  }
+  .why .img-box img {
+    width: 348px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .why {
+    height: 704px;
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+  .why .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .why .container .img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .why .container .img-box img {
+    width: 350px;
+  }
+  .why .container .img-box img:first-child {
+    margin-bottom: 16px;
+  }
+  .why .container .img-box img:last-child {
+    margin-left: 36px;
+  }
+  .why .container .desc-box {
+    width: 550px;
+  }
+  .why .container .desc-box h2, .why .container .desc-box p {
+    text-align: left;
+  }
+  .why .container .desc-box .button {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .why .container .img-box img:last-child {
+    margin-left: 111px;
+  }
+}
+.steps {
+  box-sizing: border-box;
+  background-color: #333;
+  padding-top: 60px;
+  padding-bottom: 61px;
+}
+.steps .card-box {
+  text-align: center;
+}
+.steps .card-box .accent {
+  fill: #5373FD;
+}
+.steps .card-box .select {
+  fill: rgb(255, 99, 99);
+}
+.steps .card-box .thumbs {
+  fill: rgb(0, 162, 255);
+}
+.steps .card-box p {
+  text-align: center;
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 111.111% */
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .steps .card-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .steps {
+    padding-top: 122px;
+    padding-bottom: 45px;
+  }
+  .steps .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .steps .container::before {
+    content: " ";
+    display: block;
+    width: 632px;
+    height: 40px;
+    background-image: url(../../../img/vector1.svg);
+    background-position: cover;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .steps .container .card-box {
+    width: 292px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .steps .container::before {
+    width: 752px;
+    height: 49px;
+    background-image: url(../../../img/vector2.svg);
+    background-position: cover;
+    position: absolute;
+    top: -49px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .steps .container .card-box {
+    width: 364px;
+  }
+}
+.book-now-upper, .book-now-lower {
+  box-sizing: border-box;
+  height: 616px;
+  background-position: center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.book-now-upper {
+  background-image: url(../../../img/bg/book-now-upper-bg.png);
+}
+.book-now-lower {
+  background-image: url(../../../img/bg/book-now-lower-bg.png);
+}
+.book-now article {
+  padding: 44px 32px;
+  background-color: rgba(35, 35, 35, 0.9);
+}
+.book-now article .subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 140% */
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.book-now article .title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.book-now article .desc {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+  letter-spacing: 1.6px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-now-upper, .book-now-lower {
+    height: 588px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .book-now-upper, .book-now-lower {
+    height: 712px;
+  }
+}
+.what-tourist-say {
+  height: 680px;
+  background-image: url(../../../img/bg/what-tourist-say-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .what-tourist-say {
+    height: 924px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .what-tourist-say {
+    height: 736px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .what-tourist-say {
+    height: 708px;
+  }
+}/*# sourceMappingURL=main.css.map */

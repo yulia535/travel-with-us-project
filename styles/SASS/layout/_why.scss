@@ -1,0 +1,109 @@
+.why{
+    box-sizing: border-box;
+    height: 630px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../../../img/bg/WhyBackground.png);
+    background-position: center;
+    background-size: cover;
+    .img-box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 37px;
+        img{
+            width: 258px;
+        }
+    }
+    .desc-box{
+        h2{
+            text-align: center;
+            font-family: $fontSecondary;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px; /* 111.111% */
+            text-transform: capitalize;
+            margin-top: 0;
+            margin-bottom: 19px;
+        }
+        p{
+            text-align: center;
+            font-family: $fontPrimary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px; /* 175% */
+            letter-spacing: 1.6px; 
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        .button{
+            margin: auto;
+        }
+    }
+
+    
+}
+@media screen and (min-width: $tablet){
+    .why{
+        height: 659px;
+        .img-box{
+            img{
+                width: 348px;
+            }
+        }
+       
+        
+    }
+}
+@media screen and (min-width: $Desktop){
+    .why{
+        height: 704px;
+        padding-top: 124px;
+        padding-bottom: 124px;
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            .img-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0;
+                img{
+                    width: 350px;
+                &:first-child{
+                    margin-bottom: 16px;
+                }
+                &:last-child{
+                    margin-left: 36px;
+                }
+                }
+            }
+            .desc-box{
+                width: 550px;
+               h2, p{
+                text-align: left;
+               }
+               .button{
+                margin: 0;
+               }
+            }
+        }
+        
+    }
+}
+@media screen and (min-width: $Desktop2){
+    .why{
+        .container{
+            .img-box{
+                img:last-child{
+                    margin-left: 111px;
+                }
+                
+            } 
+
+        }
+    }
+}
