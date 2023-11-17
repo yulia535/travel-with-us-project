@@ -42,7 +42,7 @@ a {
   height: 60px;
   border: none;
   background-color: #5373FD;
-  background-image: url(../../../img/Rectangle.png);
+  background-image: url(../../img/Rectangle.png);
   background-repeat: no-repeat;
   background-position: left;
   color: #fff;
@@ -79,7 +79,7 @@ header {
   box-sizing: border-box;
   height: 862px;
   padding-top: 295px;
-  background-image: url(../../../img/bg/HeaderBackground.png);
+  background-image: url(../../img/bg/HeaderBackground.png);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -218,7 +218,7 @@ header a svg {
   display: block;
   width: 40px;
   height: 24px;
-  background-image: url(../../../img/mobile/Burger.png);
+  background-image: url(../../img/mobile/Burger.png);
   background-size: cover;
   border: none;
   position: absolute;
@@ -236,7 +236,7 @@ header a svg {
   display: block;
 }
 .navigation .checkbox:checked + .button-menu {
-  background-image: url(../../../img/mobile/BurgerOff.png);
+  background-image: url(../../img/mobile/BurgerOff.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -288,7 +288,7 @@ header a svg {
   height: 630px;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(../../../img/bg/WhyBackground.png);
+  background-image: url(../../img/bg/WhyBackground.png);
   background-position: center;
   background-size: cover;
 }
@@ -419,7 +419,7 @@ header a svg {
     display: block;
     width: 632px;
     height: 40px;
-    background-image: url(../../../img/vector1.svg);
+    background-image: url(../../img/vector1.svg);
     background-position: cover;
     position: absolute;
     top: -40px;
@@ -434,7 +434,7 @@ header a svg {
   .steps .container::before {
     width: 752px;
     height: 49px;
-    background-image: url(../../../img/vector2.svg);
+    background-image: url(../../img/vector2.svg);
     background-position: cover;
     position: absolute;
     top: -49px;
@@ -454,10 +454,10 @@ header a svg {
   padding-bottom: 120px;
 }
 .book-now-upper {
-  background-image: url(../../../img/bg/book-now-upper-bg.png);
+  background-image: url(../../img/bg/book-now-upper-bg.png);
 }
 .book-now-lower {
-  background-image: url(../../../img/bg/book-now-lower-bg.png);
+  background-image: url(../../img/bg/book-now-lower-bg.png);
 }
 .book-now article {
   box-sizing: border-box;
@@ -525,7 +525,7 @@ header a svg {
 .what-tourist-say {
   box-sizing: border-box;
   height: 980px;
-  background-image: url(../../../img/bg/what-tourist-say-bg.png);
+  background-image: url(../../img/bg/what-tourist-say-bg.png);
   background-position: center;
   background-size: cover;
   padding-top: 60px;
