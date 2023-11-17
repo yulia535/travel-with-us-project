@@ -26,6 +26,16 @@ a {
   text-decoration: none;
 }
 
+.section-title {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 111.111% */
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
 .button {
   display: block;
   width: 213px;
@@ -44,6 +54,10 @@ a {
   line-height: 20px;
   letter-spacing: 1.12px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
@@ -62,6 +76,7 @@ a {
   }
 }
 header {
+  box-sizing: border-box;
   height: 862px;
   padding-top: 295px;
   background-image: url(../../../img/bg/HeaderBackground.png);
@@ -112,6 +127,9 @@ header .SearchForm input {
 }
 header .SearchForm input:focus {
   outline: none;
+}
+header .SearchForm input:focus:invalid {
+  border: 2px dashed rgb(255, 99, 99);
 }
 header .SearchForm input::-moz-placeholder {
   color: #999;
@@ -177,7 +195,7 @@ header a:hover {
 header a svg {
   fill: #fff;
   position: absolute;
-  bottom: -16px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -196,7 +214,7 @@ header a svg {
 .navigation .logo {
   height: 20px;
 }
-.navigation button {
+.navigation .button-menu {
   display: block;
   width: 40px;
   height: 24px;
@@ -207,9 +225,24 @@ header a svg {
   right: 18px;
   top: 30px;
 }
+.navigation .checkbox {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  position: absolute;
+}
+.navigation .checkbox:checked ~ .mobile-menu {
+  display: block;
+}
+.navigation .checkbox:checked + .button-menu {
+  background-image: url(../../../img/mobile/BurgerOff.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 767px) {
-  .navigation nav {
+  .navigation .menu {
     display: none;
   }
 }
@@ -217,20 +250,20 @@ header a svg {
   .logo {
     margin-bottom: 32px;
   }
-  .navigation button {
+  .navigation .button-menu {
     display: none;
   }
-  .navigation nav ul {
+  .navigation .menu ul {
     width: 575px;
     margin: auto;
     padding: 0;
     display: flex;
     justify-content: space-between;
   }
-  .navigation nav ul li {
+  .navigation .menu ul li {
     list-style: none;
   }
-  .navigation nav ul li a {
+  .navigation .menu ul li a {
     color: #fff;
     font-family: Aleo;
     font-size: 14px;
@@ -267,15 +300,8 @@ header a svg {
 .why .img-box img {
   width: 258px;
 }
-.why .desc-box h2 {
+.why .desc-box .section-title {
   text-align: center;
-  font-family: "Aleo", serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* 111.111% */
-  text-transform: capitalize;
-  margin-top: 0;
   margin-bottom: 19px;
 }
 .why .desc-box p {
@@ -331,7 +357,7 @@ header a svg {
   .why .container .desc-box {
     width: 550px;
   }
-  .why .container .desc-box h2, .why .container .desc-box p {
+  .why .container .desc-box .section-title, .why .container .desc-box p {
     text-align: left;
   }
   .why .container .desc-box .button {
@@ -434,6 +460,7 @@ header a svg {
   background-image: url(../../../img/bg/book-now-lower-bg.png);
 }
 .book-now article {
+  box-sizing: border-box;
   padding: 44px 32px;
   background-color: rgba(35, 35, 35, 0.9);
 }
@@ -476,13 +503,79 @@ header a svg {
 @media screen and (min-width: 1024px) {
   .book-now-upper, .book-now-lower {
     height: 712px;
+    padding-top: 220px;
+    padding-bottom: 120px;
+  }
+  .book-now article {
+    width: 550px;
+  }
+  .book-now article .desc {
+    margin-bottom: 24px;
+  }
+  .book-now-lower article {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .book-now article {
+    width: 558px;
   }
 }
 .what-tourist-say {
-  height: 680px;
+  box-sizing: border-box;
+  height: 980px;
   background-image: url(../../../img/bg/what-tourist-say-bg.png);
   background-position: center;
   background-size: cover;
+  padding-top: 60px;
+}
+.what-tourist-say .section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.what-tourist-say .object-box {
+  width: 100%;
+  height: 336px;
+}
+.what-tourist-say .object-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.what-tourist-say .desc-container {
+  box-sizing: border-box;
+  padding: 48px 60px;
+  background-color: #333;
+}
+.what-tourist-say .desc-container h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.what-tourist-say .desc-container p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+  letter-spacing: 1.6px;
+  text-indent: 30px;
+  margin: 0;
+  position: relative;
+}
+.what-tourist-say .desc-container p svg {
+  fill: #5373FD;
+  position: absolute;
+  left: 0;
+  top: -6px;
 }
 
 @media screen and (min-width: 768px) {
@@ -493,10 +586,93 @@ header a svg {
 @media screen and (min-width: 1024px) {
   .what-tourist-say {
     height: 736px;
+    padding-top: 120px;
+  }
+  .what-tourist-say article {
+    display: flex;
+    justify-content: center;
+  }
+  .what-tourist-say article .object-box {
+    width: 320px;
+  }
+  .what-tourist-say article .desc-container {
+    width: 640px;
   }
 }
 @media screen and (min-width: 1360px) {
   .what-tourist-say {
     height: 708px;
   }
+  .what-tourist-say article .object-box {
+    width: 380px;
+    height: 308px;
+  }
+  .what-tourist-say article .desc-container {
+    width: 760px;
+  }
+}
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #000;
+}
+footer .logo {
+  margin-bottom: 8px;
+}
+footer p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+footer .social-container {
+  box-sizing: border-box;
+  width: 275px;
+  padding: 0;
+  margin-top: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+footer .social-container a svg {
+  fill: #fff;
+}
+footer .social-container a:hover svg {
+  fill: #5373FD;
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu ul {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 32px 0px;
+  list-style: none;
+  background-color: #5373FD;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: -216px;
+}
+.mobile-menu ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile-menu ul a {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

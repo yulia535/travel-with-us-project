@@ -14,6 +14,7 @@
         background-image: url(../../../img/bg/book-now-lower-bg.png);
     }
         article{
+            box-sizing: border-box;
             padding: 44px 32px;
             background-color: rgba(35, 35, 35, 0.90) ;
             .subtitle{
@@ -54,6 +55,7 @@
     .book-now{
         &-upper, &-lower{
         height: 588px;
+        
         }
     }
 }
@@ -61,9 +63,29 @@
     .book-now{
         &-upper, &-lower{
         height: 712px;
+        padding-top: 220px;
+        padding-bottom: 120px;
+        }
+        article{
+            width: 550px;
+            .desc{
+                margin-bottom: 24px;
+            }
+        }
+        &-lower{
+            article{
+                margin-right: 0;
+                margin-left: auto;
+               
+            }
+
         }
     }
 }
 @media screen and (min-width: $Desktop2){
-
+    .book-now{
+        article{
+            width: 558px;
+        }
+    }
 }

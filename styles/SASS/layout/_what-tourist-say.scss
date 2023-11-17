@@ -1,8 +1,60 @@
 .what-tourist-say{
-    height: 680px;
+    box-sizing: border-box;
+    height: 980px;
     background-image: url(../../../img/bg/what-tourist-say-bg.png);
     background-position: center;
     background-size: cover;
+    padding-top: 60px;
+    .section-title{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .object-box{
+        width: 100%;
+        height: 336px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .desc-container{
+        box-sizing: border-box;
+        padding: 48px 60px;
+        background-color: $colorBgSteps;
+        h3{
+            font-family: $fontPrimary;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 140% */
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        p{
+            font-family: $fontPrimary;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 28px; /* 175% */
+            letter-spacing: 1.6px;
+            text-indent: 30px;
+            margin: 0;
+            position: relative;
+            
+            svg{
+                fill:$colorAccentPrimary;
+                position: absolute;
+                left: 0;
+                top:-6px
+
+            }
+        }
+
+    }
+
     
 }
 @media screen and (min-width: $tablet){
@@ -14,12 +66,33 @@
 @media screen and (min-width: $Desktop){
     .what-tourist-say{
         height: 736px;
+        padding-top: 120px;
+        article{
+            display: flex;
+            justify-content: center;
+            .object-box{
+                width: 320px;
+            }
+            .desc-container{
+                width: 640px;
+            }
+        }
         
     }
 }
 @media screen and (min-width: $Desktop2){
     .what-tourist-say{
         height: 708px;
+        article{
+            .object-box{
+                width: 380px;
+                height: 308px;
+            }
+            .desc-container{
+                width: 760px;
+            }
+        }
+        
         
     }
 

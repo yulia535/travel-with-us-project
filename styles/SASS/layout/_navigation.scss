@@ -7,7 +7,7 @@
         height: 20px;
     }
     
-    button{
+    .button-menu{
         display: block;
         width: 40px;
         height: 24px;
@@ -19,13 +19,28 @@
         top: 30px;
 
     }
+    .checkbox{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        position: absolute;
+    }
+    .checkbox:checked ~ .mobile-menu{
+        display: block;
+    }
+    .checkbox:checked + .button-menu{
+        background-image: url(../../../img/mobile/BurgerOff.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     
 
 }
 @media screen and (max-width: calc($tablet - 1px)){
     .navigation{
         
-        nav{
+        .menu{
             display: none;
         }
     }
@@ -35,10 +50,10 @@
         margin-bottom: 32px;
     }
    .navigation{
-    button{
+    .button-menu{
         display: none;
     }
-    nav{
+    .menu{
         
         ul{
             width: 575px;

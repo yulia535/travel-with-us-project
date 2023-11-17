@@ -1,0 +1,30 @@
+.mobile-menu{
+    display: none;
+    ul{ 
+        box-sizing: border-box;
+        width: 100%;
+        padding: 32px 0px;
+        list-style: none;
+        background-color: $colorAccentPrimary;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: $fontSecondary;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 0;
+        bottom: -216px;
+        li:not(:last-child){
+            margin-bottom: 24px;
+        }
+        a{
+            color: $colorText;
+        }
+
+    }
+}
