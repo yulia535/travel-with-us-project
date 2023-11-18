@@ -124,9 +124,12 @@ header{
     }
 }
 @media screen and (min-width: $tablet){
-    .SearchForm{
-        width: 647px;
-        
+    header{
+        .SearchForm{
+            width: 647px;
+            
+        }
     }
+   
  
 }
